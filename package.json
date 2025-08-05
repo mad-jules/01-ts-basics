@@ -3,13 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mad-jules.github.io/01-ts-basics/",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
     "build": "vite build"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
   },
