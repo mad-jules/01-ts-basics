@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "type-check": "tsc --noEmit",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "build": "vite build"
   },
   "devDependencies": {
     "typescript": "~5.8.3",
